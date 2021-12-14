@@ -1,0 +1,24 @@
+:root {
+  --bgOpacity: 0.6;
+  --bgColor: 72,72,72;
+  --fontColor: 255,255,255;
+  --hoverBgColor: 108,108,108;
+  --hoverBgOpacity: 1;
+}
+
+.button {
+  border: 0;
+  background-color: rgb(var(--bgColor), var(--bgOpacity));
+  color: rgb(var(--fontColor));
+  padding: 1em;
+  outline: 0;
+  border-radius: 50px;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button:hover {
+  background-color: rgb(var(--hoverBgColor), var(--hoverBgOpacity));
+}

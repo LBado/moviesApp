@@ -1,0 +1,51 @@
+.title {
+  font-family: 'Monoton', cursive;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px dashed black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.form label {
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.form input {
+  width: 50%;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgb(204, 204, 204);
+  padding: 1em;
+}
+
+.form input::placeholder {
+  text-align: center;
+}
+
+.form button {
+  margin: 1em auto;
+  padding: 1em;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  outline: 0;
+}
+
+.form button:hover {
+  background-color: rgb(18, 18, 18);
+}
+
+.form button:active {
+  transform: scale(0.98);
+}

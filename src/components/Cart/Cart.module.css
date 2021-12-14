@@ -1,0 +1,23 @@
+.cartTitle {
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  padding: 0.5em 1em 1em 1em;
+  border-bottom: 1px dashed black;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em 1em 0em;
+  border-top: 1px dashed black;
+}
+
+.cart {
+  
+  overflow: scroll;
+  overflow-x: hidden;
+}

@@ -1,0 +1,30 @@
+.movie {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  height: 10em;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0.5em;
+}
+
+.overview {
+  padding: 1em;
+  width: 100%;
+  position: relative;
+}
+
+.img {
+  height: 100%;
+}
+
+title {
+  width: 100%;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em 1em 0 1em;
+}

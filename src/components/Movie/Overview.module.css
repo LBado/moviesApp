@@ -1,0 +1,143 @@
+.overview {
+  /* display: none; */
+  width: 0;
+  margin: 0;
+  background-color: rgb(36, 36, 36);
+  transition: width 0.6s ease-in;
+  color: white;
+}
+
+.overview.selected {
+  height: 25vw;
+  width: 35.5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.overview.selected::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+  display: none;
+  /* width: 25em; */
+  color: rgb(255, 196, 0);
+}
+
+.overview.selected .title {
+  display: block;
+}
+
+.synopsis{
+  padding: 0;
+  margin: 0.2em 0.6em;
+  margin-top: 0.4em;
+  display: none;
+  font-size: 0.8em;
+}
+
+.overview.selected .cast,
+.overview.selected .synopsis {
+  display: block;
+}
+
+.description {
+  padding: 0;
+  margin: 1em;
+  font-size: 0.9em;
+  display: none;
+  height: 14em;
+  font-weight: 50;
+  /* width: 25em; */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  text-align: justify;
+}
+
+.overview.selected .description {
+  display: block;
+}
+
+.rent {
+  border: 0;
+  background-color: rgb(72, 72, 72, 0.3);
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  width: auto;
+  border-radius: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+.rent:disabled {
+  background-color: rgb(72, 72, 72, 0.3);
+  color: rgb(156, 156, 156);
+  pointer-events: none;
+}
+
+.rent:disabled:hover {
+  background-color: rgb(72, 72, 72, 0.3);
+  text-shadow: none;
+}
+
+.overview.selected .rent {
+  display: block;
+}
+
+.rent:hover {
+  background-color: rgb(255, 196, 0);
+  text-shadow: 1px 0px 5px black;
+  box-shadow: rgb(255, 217, 0, 0.6) -2px -2px 8px;
+}
+
+.rent:active {
+  transform: scale(0.98);
+}
+
+.actions {
+  display: none;
+}
+
+.overview.selected .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: none;
+  margin: 0;
+  padding: 1em;
+  background-color: rgb(72, 72, 72, 0.3);
+  border-radius: 50px;
+  /* line-height: 0.3em; */
+}
+
+.overview.selected .price {
+  display: block;
+}
+
+/* width */
+/* .overview.selected::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Track */
+/* .overview.selected::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+} */
+ 
+/* Handle */
+/* .overview.selected::-webkit-scrollbar-thumb {
+  background: #888; 
+} */
+
+/* Handle on hover */
+/* .overview.selected::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} */
